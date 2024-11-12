@@ -22,3 +22,16 @@ Console.WriteLine("{0} {1}", double.MinValue, double.MaxValue);
 
 Console.WriteLine("\nWorking with const variables");
 Console.WriteLine("My name is {0}", fullName);
+
+Console.WriteLine("\nWorking with type conversions");
+byte b = 1;
+int i = b;
+Console.WriteLine(i);
+
+int i1 = 2024;
+byte b1 = (byte)i1;
+Console.WriteLine(b1);
+
+string status = "Good";
+int i2 = Convert.ToInt32(status);
+Console.WriteLine(i2);
