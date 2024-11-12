@@ -12,3 +12,6 @@ Console.WriteLine(character);
 Console.WriteLine(isWorking);
 Console.WriteLine(totalPrice);
 Console.WriteLine(firstName);
+
+Console.WriteLine("{0} {1}", int.MinValue, int.MaxValue);
+Console.WriteLine("{0} {1}", double.MinValue, double.MaxValue);
