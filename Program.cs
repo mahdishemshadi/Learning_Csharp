@@ -54,3 +54,15 @@ catch (Exception ex)
 {
     Console.WriteLine("Exception 2 occurred: {0}", ex);
 }
+
+try
+{
+    string boolean = "True";
+    bool b3 = Convert.ToBoolean(boolean);
+    Console.WriteLine(b3);
+}
+
+catch (Exception ex)
+{
+    Console.WriteLine("Exception 3 occurred: {0}", ex);
+}
