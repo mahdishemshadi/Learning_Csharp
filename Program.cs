@@ -32,6 +32,25 @@ int i1 = 2024;
 byte b1 = (byte)i1;
 Console.WriteLine(b1);
 
-string status = "Good";
-int i2 = Convert.ToInt32(status);
-Console.WriteLine(i2);
+try
+{
+    string status = "Good";
+    int i2 = Convert.ToInt32(status);
+    Console.WriteLine(i2);
+}
+catch (Exception ex)
+{
+    Console.WriteLine("Exception 1 occurred: {0}", ex);
+}
+
+
+try
+{
+    string nextYear = "2025";
+    byte b2 = Convert.ToByte(nextYear);
+    Console.WriteLine(b2);
+}
+catch (Exception ex)
+{
+    Console.WriteLine("Exception 2 occurred: {0}", ex);
+}
